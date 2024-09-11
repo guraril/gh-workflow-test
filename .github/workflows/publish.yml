@@ -13,4 +13,4 @@ jobs:
       - run: zip -r io.github.guraril.fix-linux-world-issues-${{ github.ref_name }}.zip ./*
       - uses: softprops/action-gh-release@v2
         with:
-          files: io.guraril.github.fix-linux-world-issues-${{ github.ref_name }}.zip
+          files: io.github.guraril.fix-linux-world-issues-${{ github.ref_name }}.zip
