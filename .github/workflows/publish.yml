@@ -21,11 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Chache rust
-        uses: Swatinem/rust-cache@v2
+      - uses: Swatinem/rust-cache@v2
         with:
-          shared_key: "rust-cache"
+            shared-key: "rust-cache"
 
       - name: Build and Archive files
         run: |
