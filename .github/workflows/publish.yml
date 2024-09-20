@@ -39,7 +39,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.release_tag }}
-          name: Release ${{ github.inputs.release_tag }}
+          name: Release ${{ github.event.inputs.release_tag }}
           draft: false
           token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: ${{ github.event.inputs.is_prerelease }}
